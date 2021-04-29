@@ -6,8 +6,8 @@ from dotenv import load_dotenv, find_dotenv
 load_dotenv(find_dotenv())
 
 # User credentials
-EMAIL = "vedantntpc@gmail.com"	
-PASSWORD = "Vedant71#123"
+EMAIL = "*****"	
+PASSWORD = "******"
 
 # Required binaries
 BROWSER_EXE = '/usr/bin/firefox'
