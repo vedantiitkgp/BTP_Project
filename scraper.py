@@ -86,7 +86,7 @@ class CollectPosts(object):
         profile_dir = os.path.join(main_dir,page)
         if not os.path.exists(profile_dir):
             os.mkdir(profile_dir)
-        '''
+    
         ##### Photos and Videos #######
         self.browser.get("https://www.facebook.com/"+page+"/photos_of/")
         time.sleep(5)
@@ -114,7 +114,7 @@ class CollectPosts(object):
             self.image_and_video_downloader(media_link,media_dir,count)
             count = count + 1
         print("Media done")
-        '''
+      
         ###### Friends ###########
 
         self.browser.get('https://www.facebook.com/'+page+'/friends/')
@@ -137,7 +137,7 @@ class CollectPosts(object):
         file1.writelines(friends_list)
         file1.close()
         print("Friends done")
-        '''
+        
         ##### About #####
         file2 = open(profile_dir+"/about.txt","w")
 
@@ -258,7 +258,7 @@ class CollectPosts(object):
             # Scroll down to bottom
             self.browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         print("Posts done")
-        '''
+        
 
     def collect(self, type):
         if type == "groups":
